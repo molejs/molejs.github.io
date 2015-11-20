@@ -9,12 +9,15 @@ To install, you have the option to do so with docker, as the Dockerfile is provi
 
 If you choose to install it the "classic" way, follow these steps:
 
-```
+```bash
 git clone git@github.com:molejs/mole-dashboard.git
+cd mole-dashboard
 npm install
+vim src/config.js # Edit the URL of the mole-server
 npm build
 ```
 
-## Configure and run
+Now you just have to serve the directory and you're done.
 
-TODO
+**Note:** you may want to filter all the files that are not `index.html` and the files under `dist` from apache, nginx or whatever you are using to serve the app.
+
