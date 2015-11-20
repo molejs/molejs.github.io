@@ -1,10 +1,13 @@
 # Summary
 
-This is the summary of my book.
+Tabe of contents.
 
 * [Howto](howto/README.md)
-    * [Install](howto/install.md)
-    * [Configure](howto/configure.md)
-    * [Adaptors](howto/adaptors.md)
+    * [Reporter](howto/reporter/README.md)
+    * [Server](howto/server/README.md)
+    * [Dashboard](howto/dashboard/README.md)
+    * [Adaptors](howto/adaptors/README.md)
+        * [Redux](howto/adaptors/redux.md)
+        * [Other](howto/adaptors/other.md)
 * [API](api/README.md)
 * [Mole log specification](mole-log/README.md)
