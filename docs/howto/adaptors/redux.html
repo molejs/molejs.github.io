@@ -1,0 +1,347 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Redux | Introduction</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.5.2">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../../howto/adaptors/other.html" />
+    
+    
+    <link rel="prev" href="../../howto/adaptors/index.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book" data-level="1.4.1" data-chapter-title="Redux" data-filepath="howto/adaptors/redux.md" data-basepath="../.." data-revision="Fri Nov 20 2015 15:45:26 GMT+0100 (CET)">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="howto/index.html">
+            
+                
+                    <a href="../../howto/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Howto
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="howto/reporter/index.html">
+            
+                
+                    <a href="../../howto/reporter/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Reporter
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="howto/server/index.html">
+            
+                
+                    <a href="../../howto/server/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        Server
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="howto/dashboard/index.html">
+            
+                
+                    <a href="../../howto/dashboard/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        Dashboard
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="howto/adaptors/index.html">
+            
+                
+                    <a href="../../howto/adaptors/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        Adaptors
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.4.1" data-path="howto/adaptors/redux.html">
+            
+                
+                    <a href="../../howto/adaptors/redux.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.1.</b>
+                        
+                        Redux
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="howto/adaptors/other.html">
+            
+                
+                    <a href="../../howto/adaptors/other.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.2.</b>
+                        
+                        Other
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="api/index.html">
+            
+                
+                    <a href="../../api/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        API
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="mole-log/index.html">
+            
+                
+                    <a href="../../mole-log/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Mole log specification
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../" >Introduction</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="moleredux">mole-redux</h1>
+<p>mole-redux is a tiny helper library that works as a middleware for redux, allowing easy
+state-action molejs. Underneath, it uses the report() method from
+<a href="https://github.com/molejs/mole-reporter" target="_blank">mole-reporter</a> one of the three independent packages that
+form the whole molejs service stack.</p>
+<p>All the reported logs follow the <strong>mole log specification</strong>.</p>
+<h2 id="requirements">Requirements</h2>
+<ul>
+<li><a href="https://github.com/molejs/mole-reporter" target="_blank">mole-reporter</a></li>
+</ul>
+<h2 id="install">Install</h2>
+<pre><code class="lang-bash">npm install --save mole-redux
+</code></pre>
+<h2 id="configure-with-redux">Configure with redux</h2>
+<p>When loading your store use <code>applyMiddleware</code> and <code>createStoreWithMiddleware</code>
+<a href="https://rackt.github.io/redux/docs/advanced/Middleware.html" target="_blank">as described by the redux docs</a>.</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">import</span> moleMiddleware <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;mole-redux&apos;</span>;
+
+<span class="hljs-comment">/* ... */</span>
+
+<span class="hljs-keyword">let</span> createStoreWithMiddleware = applyMiddleware(moleMiddleware);
+<span class="hljs-keyword">let</span> appReducers = combineReducers(reducers);
+<span class="hljs-keyword">let</span> store = createStoreWithMiddleware(appReducers);
+</code></pre>
+<h2 id="error-logging">Error logging</h2>
+<p>In order to actually do the logging you still need to integrate mole-reporter to
+implement the report and config methods.</p>
+<p>The first thing, is to surround your application&apos;s entry point in a try-catch block.
+In react, this would look something like the following, though YMMV.</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">import</span> Mole <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;mole-reporter&apos;</span>;
+<span class="hljs-keyword">import</span> fetch <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;fetch&apos;</span>;
+<span class="hljs-comment">/* import Component */</span>
+
+Mole.config({url: <span class="hljs-string">&apos;http://api.example.com/mole&apos;</span>});
+
+<span class="hljs-keyword">try</span> {
+  React.render(Component, <span class="hljs-built_in">document</span>.body);
+} <span class="hljs-keyword">catch</span> (error) {
+  Mole.report(error);
+}
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../howto/adaptors/index.html" class="navigation navigation-prev " aria-label="Previous page: Adaptors"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../../howto/adaptors/other.html" class="navigation navigation-next " aria-label="Next page: Other"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../../gitbook/app.js"></script>
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
