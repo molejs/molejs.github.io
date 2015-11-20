@@ -1,0 +1,125 @@
+body {
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+  font-size: 14px;
+}
+
+* {
+  outline: none;
+  box-sizing: border-box;
+}
+
+.header {
+  text-align: center;
+  background-color: #F3F3F3;
+  padding: 2em;
+}
+
+.header > .logo {
+  background: transparent url(../img/mole.png) center center no-repeat;
+  width: 200px;
+  height: 200px;
+  background-size: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.header > h1 {
+  font-weight: 100;
+  font-size: 4em;
+  color: rgb(46, 44, 59);
+}
+
+.header > p {
+  font-family: 'Lora', serif;
+  font-weight: bold;
+  font-size: 1.7em;
+  color: rgb(103, 102, 114);
+}
+
+nav {
+  margin: 3em 0 1em 0;
+}
+
+nav > ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.1em;
+  letter-spacing: 0.05em;
+  color: rgba(0, 0, 0, .5);
+  padding: .5em 1em;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+  border-radius: 3px;
+}
+
+nav > ul > li > a:hover {
+  color: white;
+  background: rgb(193, 71, 131);
+}
+
+.features {
+  width: 90%;
+  max-width: 550px;
+  margin: 2em auto;
+}
+
+.feature {
+  padding-bottom: 1em;
+}
+
+.feature + .feature {
+  padding-top: 1em;
+  border-top: 1px solid rgba(0, 0, 0, .05);
+}
+
+.feature > h2 {
+  color: rgb(103, 102, 114);
+  font-family: 'Lora', serif;
+  font-weight: bold;
+  font-size: 1.6em;
+  text-align: center;
+}
+
+.feature > p {
+  color: rgba(0, 0, 0, .6);
+  text-align: justify;
+}
+
+.feature > p > b {
+  font-weight: bolder;
+}
+
+.footer {
+  background-color: #F3F3F3;
+  padding: 1em;
+}
+
+.authors {
+  width: 90%;
+  max-width: 550px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.authors a {
+  color: rgb(46, 44, 59);
+  font-weight: bold;
+  transition: all 200ms ease-in;
+}
+
+.authors a:hover {
+  color: rgb(193, 71, 131);
+}
+
+.heart {
+  color: rgb(193, 71, 131);
+}
