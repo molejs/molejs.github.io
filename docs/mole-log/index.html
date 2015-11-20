@@ -1,0 +1,557 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Mole log specification | Introduction</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.5.2">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    
+    <link rel="prev" href="../api/index.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book" data-level="3" data-chapter-title="Mole log specification" data-filepath="mole-log/README.md" data-basepath=".." data-revision="Fri Nov 20 2015 15:50:21 GMT+0100 (CET)">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="howto/index.html">
+            
+                
+                    <a href="../howto/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Howto
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="howto/reporter/index.html">
+            
+                
+                    <a href="../howto/reporter/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Reporter
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="howto/server/index.html">
+            
+                
+                    <a href="../howto/server/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        Server
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="howto/dashboard/index.html">
+            
+                
+                    <a href="../howto/dashboard/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        Dashboard
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="howto/adaptors/index.html">
+            
+                
+                    <a href="../howto/adaptors/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        Adaptors
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="howto/adaptors/redux.html">
+            
+                
+                    <a href="../howto/adaptors/redux.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.1.</b>
+                        
+                        Redux
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="howto/adaptors/other.html">
+            
+                
+                    <a href="../howto/adaptors/other.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.2.</b>
+                        
+                        Other
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="api/index.html">
+            
+                
+                    <a href="../api/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        API
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="3" data-path="mole-log/index.html">
+            
+                
+                    <a href="../mole-log/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Mole log specification
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Introduction</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="mole-log-specification">Mole log specification</h1>
+<p>All log reports sent to the mole server and processed by the mole dashboard follow a common structure, that is, the <strong>Mole log specification</strong>.</p>
+<h2 id="log-object">Log object</h2>
+<p>The main log object where all the data is contained.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>id</code></td>
+<td>string</td>
+<td>ID of the log, must not be present on the report but is on the retrieval</td>
+</tr>
+<tr>
+<td><code>timestamp</code></td>
+<td>string</td>
+<td>Timestamp of the report</td>
+</tr>
+<tr>
+<td><code>location</code></td>
+<td>Location object</td>
+<td>URL location where the error happened</td>
+</tr>
+<tr>
+<td><code>action_state_history</code></td>
+<td>Array of ActionState objects</td>
+<td>An array with the pairs of action-state that lead to the error</td>
+</tr>
+<tr>
+<td><code>error</code></td>
+<td>Error object</td>
+<td>Information about the error such as the line and the stacktrace</td>
+</tr>
+</tbody>
+</table>
+<h2 id="location-object">Location object</h2>
+<p>The location object contains all the information about the URL where the error happened.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>host</code></td>
+<td>string</td>
+<td>Host of the page</td>
+</tr>
+<tr>
+<td><code>href</code></td>
+<td>string</td>
+<td>Full URL of the page</td>
+</tr>
+<tr>
+<td><code>hash</code></td>
+<td>string</td>
+<td>Hash of the page</td>
+</tr>
+<tr>
+<td><code>pathname</code></td>
+<td>string</td>
+<td>Path name of the page</td>
+</tr>
+<tr>
+<td><code>port</code></td>
+<td>string</td>
+<td>Port of the page</td>
+</tr>
+<tr>
+<td><code>protocol</code></td>
+<td>string</td>
+<td>Protocol of the page</td>
+</tr>
+<tr>
+<td><code>search</code></td>
+<td>string</td>
+<td>Search query of the page</td>
+</tr>
+</tbody>
+</table>
+<h2 id="error-object">Error object</h2>
+<p>The error object contains all the data of the error, which is the message and the stacktrace.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>message</code></td>
+<td>string</td>
+<td>Message of the error</td>
+</tr>
+<tr>
+<td><code>stacktrace</code></td>
+<td>Array of StackTrace objects</td>
+<td>Stacktrace of the error</td>
+</tr>
+</tbody>
+</table>
+<h2 id="stacktrace-object">Stacktrace object</h2>
+<p>The stacktrace object contains all the data of a stacktrace line.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>function</code></td>
+<td>string</td>
+<td>Function of the stacktrace line</td>
+</tr>
+<tr>
+<td><code>file</code></td>
+<td>string</td>
+<td>File of the stacktrace line</td>
+</tr>
+<tr>
+<td><code>line</code></td>
+<td>string</td>
+<td>Line of the stacktrace line</td>
+</tr>
+<tr>
+<td><code>column</code></td>
+<td>string</td>
+<td>Column of the stacktrace line</td>
+</tr>
+</tbody>
+</table>
+<h2 id="actionstate-object">ActionState object</h2>
+<p>The ActionState object contains the pair of action and state.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Describe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>action</code></td>
+<td>Arbitrary JSON Object</td>
+<td>The action that happened in that entry</td>
+</tr>
+<tr>
+<td><code>state</code></td>
+<td>Arbitrary JSON Object</td>
+<td>The state of the application at the moment the action happened</td>
+</tr>
+</tbody>
+</table>
+<h2 id="example-log">Example log</h2>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-string">&quot;55bb692e19ff303084000004&quot;</span>,
+  <span class="hljs-string">&quot;timestamp&quot;</span>: <span class="hljs-string">&quot;Fri Nov 20 2015 13:55:06 GMT+0100 (CET)&quot;</span>,
+  <span class="hljs-string">&quot;location&quot;</span>: {
+    <span class="hljs-string">&quot;host&quot;</span>: <span class="hljs-string">&quot;fake.molejs.org&quot;</span>,
+    <span class="hljs-string">&quot;href&quot;</span>: <span class="hljs-string">&quot;http://fake.molejs.org/app&quot;</span>,
+    <span class="hljs-string">&quot;hash&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
+    <span class="hljs-string">&quot;pathname&quot;</span>: <span class="hljs-string">&quot;/app&quot;</span>,
+    <span class="hljs-string">&quot;port&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
+    <span class="hljs-string">&quot;protocol&quot;</span>: <span class="hljs-string">&quot;http:&quot;</span>,
+    <span class="hljs-string">&quot;search&quot;</span>: <span class="hljs-string">&quot;&quot;</span>
+  },
+  <span class="hljs-string">&quot;error&quot;</span>: {
+    <span class="hljs-string">&quot;message&quot;</span>: <span class="hljs-string">&quot;TypeError: undefined is not a function&quot;</span>,
+    <span class="hljs-string">&quot;stacktrace&quot;</span>: [
+      {
+        <span class="hljs-string">&quot;function&quot;</span>: <span class="hljs-string">&quot;emit&quot;</span>,
+        <span class="hljs-string">&quot;file&quot;</span>: <span class="hljs-string">&quot;events.js&quot;</span>,
+        <span class="hljs-string">&quot;line&quot;</span>: <span class="hljs-string">&quot;107&quot;</span>,
+        <span class="hljs-string">&quot;column&quot;</span>: <span class="hljs-string">&quot;17&quot;</span>
+      },
+      {
+        <span class="hljs-string">&quot;function&quot;</span>: <span class="hljs-string">&quot;EventEmitter.&lt;anonymous&gt;&quot;</span>,
+        <span class="hljs-string">&quot;file&quot;</span>: <span class="hljs-string">&quot;index.js&quot;</span>,
+        <span class="hljs-string">&quot;line&quot;</span>: <span class="hljs-string">&quot;170&quot;</span>,
+        <span class="hljs-string">&quot;column&quot;</span>: <span class="hljs-string">&quot;9&quot;</span>
+      },
+      {
+        <span class="hljs-string">&quot;function&quot;</span>: <span class="hljs-string">&quot;EventEmitter.emit&quot;</span>,
+        <span class="hljs-string">&quot;file&quot;</span>: <span class="hljs-string">&quot;events.js&quot;</span>,
+        <span class="hljs-string">&quot;line&quot;</span>: <span class="hljs-string">&quot;107&quot;</span>,
+        <span class="hljs-string">&quot;column&quot;</span>: <span class="hljs-string">&quot;17&quot;</span>
+      },
+      {
+        <span class="hljs-string">&quot;function&quot;</span>: <span class="hljs-string">&quot;ClientRequest.&lt;anonymous&gt;&quot;</span>,
+        <span class="hljs-string">&quot;file&quot;</span>: <span class="hljs-string">&quot;index.js&quot;</span>,
+        <span class="hljs-string">&quot;line&quot;</span>: <span class="hljs-string">&quot;50&quot;</span>,
+        <span class="hljs-string">&quot;column&quot;</span>: <span class="hljs-string">&quot;7&quot;</span>
+      }
+    ]
+  },
+  <span class="hljs-string">&quot;action_state_history&quot;</span>: [
+    {
+      <span class="hljs-string">&quot;action&quot;</span>: {
+        <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;OPEN_PRODUCT&quot;</span>,
+        <span class="hljs-string">&quot;product&quot;</span>: <span class="hljs-number">45</span>,
+      },
+      <span class="hljs-string">&quot;state&quot;</span>: {
+
+      }
+    },
+    {
+      <span class="hljs-string">&quot;action&quot;</span>: {
+        <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;LOAD_PRODUCT&quot;</span>,
+        <span class="hljs-string">&quot;product&quot;</span>: <span class="hljs-number">45</span>
+      },
+      <span class="hljs-string">&quot;state&quot;</span>: {
+        <span class="hljs-string">&quot;currentProduct&quot;</span>: <span class="hljs-number">45</span>
+      }
+    },
+    {
+      <span class="hljs-string">&quot;action&quot;</span>: {
+        <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;PRODUCT_LOADED&quot;</span>
+      },
+      <span class="hljs-string">&quot;state&quot;</span>: {
+        <span class="hljs-string">&quot;currentProduct&quot;</span>: <span class="hljs-number">45</span>,
+        <span class="hljs-string">&quot;loading&quot;</span>: <span class="hljs-literal">true</span>,
+      }
+    },
+    {
+      <span class="hljs-string">&quot;action&quot;</span>: {
+        <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;DISPLAY_PRODUCT&quot;</span>
+      },
+      <span class="hljs-string">&quot;state&quot;</span>: {
+        <span class="hljs-string">&quot;currentProduct&quot;</span>: <span class="hljs-number">45</span>,
+        <span class="hljs-string">&quot;product&quot;</span>: {
+          <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">45</span>,
+          <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;Foo flowers&quot;</span>,
+          <span class="hljs-string">&quot;image&quot;</span>: <span class="hljs-string">&quot;foo_flowers.jpg&quot;</span>,
+          <span class="hljs-string">&quot;price&quot;</span>: <span class="hljs-number">34.45</span>
+        },
+        <span class="hljs-string">&quot;loading&quot;</span>: <span class="hljs-literal">false</span>,
+      }
+    }
+  ]
+}
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../api/index.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: API"><i class="fa fa-angle-left"></i></a>
+        
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
