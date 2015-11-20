@@ -59,7 +59,7 @@ Field | Type | Describe
 
 ## Example log
 
-```
+```json
 {
   "id": "55bb692e19ff303084000004",
   "timestamp": "Fri Nov 20 2015 13:55:06 GMT+0100 (CET)",

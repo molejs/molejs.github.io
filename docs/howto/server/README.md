@@ -30,7 +30,7 @@ go run server.go
 ```
 
 ## Retrieving logs
-```
+```bash
 curl http://example.com/logs?limit=20&skip=0
 ```
 **Query string params**
@@ -42,7 +42,7 @@ curl http://example.com/logs?limit=20&skip=0
 
 All results are ordered by descending creation date.
 A successful result looks like:
-```
+```json
 {
   "error": false,
   "logs": [array of logs]
@@ -52,12 +52,12 @@ A successful result looks like:
 ```
 
 ## Reporting logs
-```
+```bash
 curl -X POST --data "{the json log object}" http://example.com/logs
 ```
 
 If the request is successful the request will look like:
-```
+```json
 {
   "error": false
 }
@@ -66,7 +66,7 @@ If the request is successful the request will look like:
 ## Errors
 
 All error responses look like:
-```
+```json
 {
   "error": true,
   "msg": "error message"
