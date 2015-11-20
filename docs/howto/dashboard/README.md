@@ -9,7 +9,7 @@ To install, you have the option to do so with docker, as the Dockerfile is provi
 
 If you choose to install it the "classic" way, follow these steps:
 
-```
+```bash
 git clone git@github.com:molejs/mole-dashboard.git
 npm install
 npm build
