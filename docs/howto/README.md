@@ -1,0 +1,3 @@
+#How to...
+
+In this section, you will find information about integrating the molejs stack into your project.
